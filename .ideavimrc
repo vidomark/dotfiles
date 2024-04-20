@@ -1,0 +1,95 @@
+" Plugin management
+Plug 'easymotion/vim-easymotion'
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'vim-scripts/argtextjob.vim'
+
+set sneak
+set quickscope
+set argtextobj
+
+
+
+" Settings
+let mapleader=" "
+
+set scrolloff=1000
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set relativenumber
+set number
+set autoindent
+set nowrap
+set history=1000
+set showcmd
+set showmode
+set visualbell
+set signcolumn=yes
+set backspace=indent,eol,start
+set clipboard+=unnamedplus
+set clipboard+=unnamed
+set clipboard+=ideaput
+set splitright
+set splitbelow
+set iskeyword+=-
+
+set ideajoin
+set idearefactormode=normal
+set ideastatusicon=gray
+
+
+
+" Mappings
+map Q gq
+nnoremap H <nop>
+
+nnoremap<leader><Esc> :nohlsearch<CR>
+
+nnoremap<C-d> <C-d>zz
+nnoremap<C-u> <C-u>zz
+
+nnoremap<C-o> <C-o>zz
+nnoremap<C-i> <C-i>zz
+
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" For visual mode: Move the selected block of text up or down with J and K, and reselect the moved
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+nnoremap<leader>r: action Run<CR>
+nnoremap<leader>d :action Debug<CR>
+nnoremap<leader>rr :action ContextRun<CR>
+nnoremap<leader>dd :action ContextDebug<CR>
+
+nnoremap<C-t> :action ActivateTerminalToolWindow<CR>
+nnoremap<leader>t :action Terminal.OpenInTerminal<CR>
+
+nnoremap<leader>l :action RecentLocations<CR>
+nnoremap<leader>h :action LocalHistory.ShowHistory<CR>
+
+nnoremap<leader>cr :action CollapseRegion<CR>
+nnoremap<leader>er :action ExpandRegion<CR>
+
+nnoremap<leader>f :action FileStructurePopup<CR>
+nnoremap<leader>u :action FindUsages<CR>
+nnoremap<leader>h :action CallHierarchy<CR>
+
+nnoremap<C-o> :action Back<CR>
+nnoremap<C-i> :action Forward<CR>
+
+nnoremap<C-h> :action PreviousTab<CR>
+nnoremap<C-l> :action NextTab<CR>
+
+nnoremap<leader>bp :action ToggleLineBreakpoint<CR>
+nnoremap<leader>bt :action ActivateDebugToolWindow<CR>
+nnoremap<leader>be :action EvaluateExpression<CR>
+nnoremap<leader>bm :action XDebugger.MuteBreakpoints<CR>
+
+nnoremap<leader>1 :NERDTree<CR>
