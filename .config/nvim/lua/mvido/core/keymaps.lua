@@ -2,6 +2,7 @@ local keymap = vim.keymap
 
 vim.g.mapleader = " "
 
+keymap.set("i", "jj", "<Esc>")
 keymap.set("n", "<leader><F1>", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader><Esc>", ":nohl<CR>")
 
