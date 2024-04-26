@@ -47,6 +47,7 @@ set ideastatusicon=gray
 " Mappings
 map Q gq
 nnoremap H <nop>
+inoremap jj <Esc>
 
 nnoremap<leader><Esc> :nohlsearch<CR>
 
@@ -59,9 +60,12 @@ nnoremap<C-i> <C-i>zz
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-" For visual mode: Move the selected block of text up or down with J and K, and reselect the moved
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+vnoremap x, "_x
+vnoremap <leader>d "_d
+vnoremap <leader>c "_c
+vnoremap <leader>p "_dP
 
 nnoremap<leader>r: action Run<CR>
 nnoremap<leader>d :action Debug<CR>
@@ -84,8 +88,8 @@ nnoremap<leader>h :action CallHierarchy<CR>
 nnoremap<C-o> :action Back<CR>
 nnoremap<C-i> :action Forward<CR>
 
-nnoremap<C-h> :action PreviousTab<CR>
-nnoremap<C-l> :action NextTab<CR>
+nnoremap<C-j> :action PreviousTab<CR>
+nnoremap<C-k> :action NextTab<CR>
 
 nnoremap<leader>bp :action ToggleLineBreakpoint<CR>
 nnoremap<leader>bt :action ActivateDebugToolWindow<CR>
