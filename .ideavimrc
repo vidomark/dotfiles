@@ -47,7 +47,9 @@ set ideastatusicon=gray
 " Mappings
 map Q gq
 nnoremap H <nop>
-inoremap jj <Esc>
+inoremap jk <Esc>
+vnoremap < <gv
+vnoremap > >gv
 
 nnoremap<leader><Esc> :nohlsearch<CR>
 
@@ -62,10 +64,11 @@ nnoremap N Nzzzv
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+
 vnoremap x, "_x
-vnoremap <leader>d "_d
-vnoremap <leader>c "_c
-vnoremap <leader>p "_dP
+vnoremap<leader>d "_d
+vnoremap<leader>c "_c
+vnoremap<leader>p "_dP
 
 nnoremap<leader>r: action Run<CR>
 nnoremap<leader>d :action Debug<CR>
@@ -75,25 +78,50 @@ nnoremap<leader>dd :action ContextDebug<CR>
 nnoremap<C-t> :action ActivateTerminalToolWindow<CR>
 nnoremap<leader>t :action Terminal.OpenInTerminal<CR>
 
-nnoremap<leader>l :action RecentLocations<CR>
-nnoremap<leader>h :action LocalHistory.ShowHistory<CR>
-
 nnoremap<leader>cr :action CollapseRegion<CR>
 nnoremap<leader>er :action ExpandRegion<CR>
 
-nnoremap<leader>f :action FileStructurePopup<CR>
+nnoremap<leader>fs :action FileStructurePopup<CR>
 nnoremap<leader>u :action FindUsages<CR>
+nnoremap<leader>é :action RecentFiles<CR>
 nnoremap<leader>h :action CallHierarchy<CR>
+nnoremap<leader>rl :action RecentLocations<CR>
+nnoremap<leader>lh :action LocalHistory.ShowHistory<CR>
 
 nnoremap<C-o> :action Back<CR>
 nnoremap<C-i> :action Forward<CR>
 
-nnoremap<C-j> :action PreviousTab<CR>
-nnoremap<C-k> :action NextTab<CR>
+nnoremap<C-h> :action PreviousTab<CR>
+nnoremap<C-l> :action NextTab<CR>
+nnoremap<leader>x :action CloseContent<CR>
+
+nnoremap<leader>rn :action RenameElement<CR>
+nnoremap<leader>rm :action ExtractMethod<CR>
+nnoremap<leader>rv :action IntroduceVariable<CR>
+nnoremap<leader>rf :action IntroduceField<CR>
+nnoremap<leader>rs :action ChangeSignature<CR>
+nnoremap<leader>rp :action Refactorings.QuickListPopupAction<CR>
+
+nnoremap <leader>gd :action GotoDeclaration<CR>
+nnoremap <leader>gy :action GotoTypeDeclaration<CR>
+nnoremap <leader>gi :action GotoImplementation<CR>
+nnoremap <leader>gu :action ShowUsages<CR>
+nnoremap <leader>gt :action GotoTest<CR>
+
+nnoremap ú :action MethodUp<CR>
+nnoremap ő :action MethodDown<CR>
 
 nnoremap<leader>bp :action ToggleLineBreakpoint<CR>
 nnoremap<leader>bt :action ActivateDebugToolWindow<CR>
 nnoremap<leader>be :action EvaluateExpression<CR>
 nnoremap<leader>bm :action XDebugger.MuteBreakpoints<CR>
+
+nnoremap<leader>gc :action CheckinProject<CR>
+nnoremap<leader>gs :action ActivateVersionControlToolWindow<CR>
+nnoremap<leader>gb :action Git.Branches<CR>
+
+nnoremap<leader>ek :action GotoNextError<CR>
+nnoremap<leader>ej :action GotoPreviousError<CR>
+nnoremap<leader>ef :action ShowErrorDescription<CR>
 
 nnoremap<leader>1 :NERDTree<CR>

@@ -13,6 +13,7 @@ source $HOME/.fzf-config.sh
 source $HOME/.init-fzf-git.sh
 source $HOME/fzf-git.sh/fzf-git.sh
 source $HOME/.cursor-mode.sh
+source $HOME/.init-vim-anywhere.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
@@ -21,6 +22,7 @@ bindkey -v
 bindkey -M vicmd v edit-command-line
 bindkey -M vicmd ^g^g fzf-git-hashes-widget
 bindkey -M vicmd ^g^z fzf-git-lreflogs-widget
+bindkey -M viins 'jk' vi-cmd-mode
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
