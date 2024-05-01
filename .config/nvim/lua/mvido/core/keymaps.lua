@@ -2,9 +2,9 @@ local keymap = vim.keymap
 
 vim.g.mapleader = " "
 
-keymap.set("i", "jj", "<Esc>")
+keymap.set("i", "jk", "<Esc>")
 keymap.set("n", "<leader><F1>", ":NvimTreeToggle<CR>")
-keymap.set("n", "<leader><Esc>", ":nohl<CR>")
+keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 keymap.set("n", "H", "<nop>")
 keymap.set("n", "x", '"_x')
@@ -28,5 +28,12 @@ keymap.set("n", "N", "Nzzzv")
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+keymap.set("n", "<F1>", "<cmd>ls<CR>:buffer ", { silent = true })
 keymap.set("n", "<leader>bn", ":bn<CR>")
-keymap.set("n", "<leader>tn", "gt")
+keymap.set("n", "<leader>bp", ":bp<CR>")
+
+keymap.set("n", "<leader>to", "<cmd>tabnew<CR>")
+keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>")
+keymap.set("n", "<leader>tn", "<cmd>tabn<CR>")
+keymap.set("n", "<leader>tp", "<cmd>tabp<CR>")
+keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>")
