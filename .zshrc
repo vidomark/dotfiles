@@ -7,6 +7,7 @@ export VISUAL=nvim
 export BAT_THEME="gruvbox-dark"
 export LESS='-i'
 
+source $HOME/.init-oh-my-zsh.sh
 source $HOME/.pl9k.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.fzf-config.sh
