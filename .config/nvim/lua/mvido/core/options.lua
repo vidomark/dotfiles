@@ -21,4 +21,4 @@ opt.splitbelow = true
 opt.incsearch = true
 opt.scrolloff = 1000
 opt.iskeyword:append("-")
-opt.clipboard:append({"unnamedplus", "unnamed"})
+opt.clipboard:append({ "unnamedplus", "unnamed" })
