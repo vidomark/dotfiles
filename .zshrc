@@ -13,7 +13,6 @@ source $HOME/.fzf-config.sh
 source $HOME/.init-fzf-git.sh
 source $HOME/fzf-git.sh/fzf-git.sh
 source $HOME/.cursor-mode.sh
-source $HOME/.init-vim-anywhere.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
