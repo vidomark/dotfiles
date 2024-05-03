@@ -7,7 +7,7 @@ keymap.set("n", "<leader><F1>", ":NvimTreeToggle<CR>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 keymap.set("n", "H", "<nop>")
-keymap.set("n", "x", '"_x')
+keymap.set({ "n", "v" }, "x", '"_x')
 keymap.set("v", "<leader>d", '"_d')
 keymap.set("v", "<leader>c", '"_c')
 keymap.set("v", "<leader>p", '"_dP')
