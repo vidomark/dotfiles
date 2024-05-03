@@ -10,6 +10,8 @@ set sneak
 set quickscope
 set argtextobj
 set which-key
+set notimeout
+
 let g:WhichKey_FontSize = 24
 let g:WhichKey_CommandColor = "#41ead4"
 let g:WhichKey_PrefixColor = "#f335b2"
