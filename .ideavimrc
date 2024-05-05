@@ -51,8 +51,8 @@ set ideastatusicon=gray
 map Q gq
 nnoremap H <nop>
 inoremap jk <Esc>
-vnoremap < <gv
-vnoremap > >gv
+vnoremap ő <gv
+vnoremap ú >gv
 
 nnoremap<leader>nh :nohlsearch<CR>
 
@@ -115,6 +115,8 @@ nnoremap <leader>gt :action GotoTest<CR>
 
 nnoremap ú :action MethodUp<CR>
 nnoremap ő :action MethodDown<CR>
+nnoremap ó :action MoveStatementUp<CR>
+nnoremap ü :action MoveStatementDown<CR>
 
 nnoremap<leader>dp :action ToggleLineBreakpoint<CR>
 nnoremap<leader>dt :action ActivateDebugToolWindow<CR>
