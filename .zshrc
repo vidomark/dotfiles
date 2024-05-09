@@ -9,8 +9,7 @@ source $HOME/.init-oh-my-zsh.sh
 source $HOME/.pl9k.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.fzf-config.sh
-source $HOME/.init-fzf-git.sh
-source $HOME/fzf-git.sh/fzf-git.sh
+source $HOME/fzf-git/fzf-git.sh
 source $HOME/.cursor-mode.sh
 source $HOME/.history-config.zsh
 source $HOME/.keybindings.sh
