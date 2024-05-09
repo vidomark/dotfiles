@@ -21,6 +21,7 @@ source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 
+alias lg="lazygit"
 alias vim='nvim'
 alias ls="lsd"
 alias cd="z"
