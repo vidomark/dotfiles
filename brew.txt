@@ -19,6 +19,7 @@ htop
 icu4c
 jpeg-turbo
 jq
+lazygit
 libevent
 libgit2
 libnghttp2
@@ -55,6 +56,7 @@ pixman
 python@3.12
 readline
 ripgrep
+skhd
 sqlite
 stow
 tldr
@@ -65,14 +67,20 @@ unibilium
 utf8proc
 xorgproto
 xz
+yabai
 zoxide
 zsh-autosuggestions
 zsh-syntax-highlighting
 zsh-you-should-use
 zstd
+alacritty
+amazon-q
 codewhisperer
 fig
 font-hack-nerd-font
 font-monaspace
-iterm2
+hammerspoon
+kindavim
 postman
+qspace-pro
+raycast
