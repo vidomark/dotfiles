@@ -20,5 +20,7 @@ opt.splitright = true
 opt.splitbelow = true
 opt.incsearch = true
 opt.scrolloff = 1000
+opt.foldmethod = "indent"
+opt.foldenable = false
 opt.iskeyword:append("-")
 opt.clipboard:append({ "unnamedplus", "unnamed" })

@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 
 keymap.set("i", "jk", "<Esc>")
 keymap.set("n", "<leader><F1>", ":NvimTreeToggle<CR>")
-keymap.set("n", "<leader>nh", ":nohl<CR>")
+keymap.set("n", "<leader>n", ":nohl<CR>")
 
 keymap.set("n", "H", "<nop>")
 keymap.set({ "n", "v" }, "x", '"_x')
@@ -27,6 +27,8 @@ keymap.set("n", "N", "Nzzzv")
 
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+keymap.set("v", "ő", "<gv")
+keymap.set("v", "ú", ">gv")
 
 keymap.set("n", "<F1>", "<cmd>ls<CR>:buffer ", { silent = true })
 keymap.set("n", "<leader>bn", ":bn<CR>")
