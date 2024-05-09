@@ -12,7 +12,7 @@ set argtextobj
 set which-key
 set notimeout
 
-let g:WhichKey_FontSize = 24
+let g:WhichKey_FontSize = 20
 let g:WhichKey_CommandColor = "#41ead4"
 let g:WhichKey_PrefixColor = "#f335b2"
 
@@ -43,7 +43,7 @@ set splitbelow
 set iskeyword+=-
 
 set ideajoin
-set idearefactormode=normal
+set idearefactormode=keep
 set ideastatusicon=gray
 
 
@@ -54,13 +54,13 @@ inoremap jk <Esc>
 vnoremap ő <gv
 vnoremap ú >gv
 
-nnoremap<leader>nh :nohlsearch<CR>
+nnoremap <leader>n :nohlsearch<CR>
 
-nnoremap<C-d> <C-d>zz
-nnoremap<C-u> <C-u>zz
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
 
-nnoremap<C-o> <C-o>zz
-nnoremap<C-i> <C-i>zz
+nnoremap <C-o> <C-o>zz
+nnoremap <C-i> <C-i>zz
 
 nnoremap n nzzzv
 nnoremap N Nzzzv
@@ -70,65 +70,69 @@ vnoremap K :m '<-2<CR>gv=gv
 
 vnoremap x "_x
 nnoremap x "_x
-vnoremap<leader>d "_d
-vnoremap<leader>c "_c
-vnoremap<leader>p "_dP
+vnoremap <leader>d "_d
+vnoremap <leader>c "_c
+vnoremap <leader>p "_dP
 
-nnoremap<leader>rr :action Run<CR>
-nnoremap<leader>dd :action Debug<CR>
-nnoremap<leader>rc :action ContextRun<CR>
-nnoremap<leader>dc :action ContextDebug<CR>
+nnoremap <leader>rr :action Run<CR>
+nnoremap <leader>dd :action Debug<CR>
+nnoremap <leader>rc :action ContextRun<CR>
+nnoremap <leader>dc :action ContextDebug<CR>
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j
 
-nnoremap<C-t> :action ActivateTerminalToolWindow<CR>
-nnoremap<leader>t :action Terminal.OpenInTerminal<CR>
+nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
 
-nnoremap<leader>cr :action CollapseRegion<CR>
-nnoremap<leader>er :action ExpandRegion<CR>
+nnoremap zc :action CollapseRegion<CR>
+nnoremap zo :action ExpandRegion<CR>
 
-nnoremap<leader>fs :action FileStructurePopup<CR>
-nnoremap<leader>u :action FindUsages<CR>
-nnoremap<leader>é :action RecentFiles<CR>
-nnoremap<leader>h :action CallHierarchy<CR>
-nnoremap<leader>rl :action RecentLocations<CR>
-nnoremap<leader>lh :action LocalHistory.ShowHistory<CR>
+nnoremap <leader>fs :action FileStructurePopup<CR>
+nnoremap <leader>u :action FindUsages<CR>
+nnoremap <leader>e :action RecentFiles<CR>
+nnoremap <leader>h :action CallHierarchy<CR>
+nnoremap <leader>rl :action RecentLocations<CR>
+nnoremap <leader>lh :action LocalHistory.ShowHistory<CR>
 
-nnoremap<C-o> :action Back<CR>
-nnoremap<C-i> :action Forward<CR>
+nnoremap <C-o> :action Back<CR>
+nnoremap <C-i> :action Forward<CR>
 
-nnoremap<leader>rn :action RenameElement<CR>
-nnoremap<leader>rm :action ExtractMethod<CR>
-nnoremap<leader>rv :action IntroduceVariable<CR>
-nnoremap<leader>rf :action IntroduceField<CR>
-nnoremap<leader>rs :action ChangeSignature<CR>
-nnoremap<leader>rp :action Refactorings.QuickListPopupAction<CR>
+nnoremap <leader>rn :action RenameElement<CR>
+nnoremap <leader>rm :action ExtractMethod<CR>
+nnoremap <leader>rv :action IntroduceVariable<CR>
+nnoremap <leader>rf :action IntroduceField<CR>
+nnoremap <leader>rs :action ChangeSignature<CR>
+nnoremap <leader>rp :action Refactorings.QuickListPopupAction<CR>
 
 nnoremap <leader>gd :action GotoDeclaration<CR>
-nnoremap <leader>gy :action GotoTypeDeclaration<CR>
+nnoremap <leader>gt :action GotoTypeDeclaration<CR>
 nnoremap <leader>gi :action GotoImplementation<CR>
 nnoremap <leader>gu :action ShowUsages<CR>
-nnoremap <leader>gt :action GotoTest<CR>
+nnoremap <leader>gk :action GotoNextError<CR>
+nnoremap <leader>gj :action GotoPreviousError<CR>
+nnoremap <leader>gr :action ShowErrorDescription<CR>
+nnoremap ca :action ShowIntentionActions<CR>
+nnoremap K :action QuickJavaDoc<CR>
 
 nnoremap ú :action MethodUp<CR>
 nnoremap ő :action MethodDown<CR>
 nnoremap ó :action MoveStatementUp<CR>
 nnoremap ü :action MoveStatementDown<CR>
 
-nnoremap<leader>dp :action ToggleLineBreakpoint<CR>
-nnoremap<leader>dt :action ActivateDebugToolWindow<CR>
-nnoremap<leader>de :action EvaluateExpression<CR>
-nnoremap<leader>dm :action XDebugger.MuteBreakpoints<CR>
+nnoremap <leader>dp :action ToggleLineBreakpoint<CR>
+nnoremap <leader>dt :action ActivateDebugToolWindow<CR>
+nnoremap <leader>de :action EvaluateExpression<CR>
+nnoremap <leader>dm :action XDebugger.MuteBreakpoints<CR>
 
-nnoremap<leader>gc :action CheckinProject<CR>
-nnoremap<leader>gs :action ActivateVersionControlToolWindow<CR>
-nnoremap<leader>gb :action Git.Branches<CR>
+nnoremap <leader>gc :action CheckinProject<CR>
+nnoremap <leader>gs :action ActivateVersionControlToolWindow<CR>
+nnoremap <leader>gb :action Git.Branches<CR>
+nnoremap <leader>sm :action MaximizeEditorInSplit<CR>
+nnoremap <leader>wn :action MoveEditorToOppositeTabGroup<CR>
 
-nnoremap<leader>ek :action GotoNextError<CR>
-nnoremap<leader>ej :action GotoPreviousError<CR>
-nnoremap<leader>ef :action ShowErrorDescription<CR>
+nnoremap fe :NERDTree<CR>
+nnoremap fv :action SelectInProjectView<CR>
 
-nnoremap<leader>1 :NERDTree<CR>
