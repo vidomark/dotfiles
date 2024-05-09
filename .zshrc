@@ -1,5 +1,6 @@
 # Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+
 export ZSH="$HOME/.oh-my-zsh"
 export VISUAL=nvim
 export BAT_THEME="gruvbox-dark"
@@ -13,9 +14,9 @@ source $HOME/fzf-git/fzf-git.sh
 source $HOME/.cursor-mode.sh
 source $HOME/.history-config.zsh
 source $HOME/.keybindings.sh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-you-should-use/you-should-use.plugin.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
