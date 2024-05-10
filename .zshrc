@@ -5,6 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export VISUAL=nvim
 export BAT_THEME="gruvbox-dark"
 export LESS='-i'
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#575451,bold"
 
 source $HOME/.init-oh-my-zsh.sh
 source $HOME/.pl9k.sh
