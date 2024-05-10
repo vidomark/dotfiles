@@ -91,7 +91,6 @@ nnoremap zc :action CollapseRegion<CR>
 nnoremap zo :action ExpandRegion<CR>
 
 nnoremap <leader>fs :action FileStructurePopup<CR>
-nnoremap <leader>u :action FindUsages<CR>
 nnoremap <leader>e :action RecentFiles<CR>
 nnoremap <leader>h :action CallHierarchy<CR>
 nnoremap <leader>rl :action RecentLocations<CR>
@@ -100,20 +99,21 @@ nnoremap <leader>lh :action LocalHistory.ShowHistory<CR>
 nnoremap <C-o> :action Back<CR>
 nnoremap <C-i> :action Forward<CR>
 
-nnoremap <leader>rn :action RenameElement<CR>
-nnoremap <leader>rm :action ExtractMethod<CR>
-nnoremap <leader>rv :action IntroduceVariable<CR>
-nnoremap <leader>rf :action IntroduceField<CR>
-nnoremap <leader>rs :action ChangeSignature<CR>
-nnoremap <leader>rp :action Refactorings.QuickListPopupAction<CR>
+nnoremap rn :action RenameElement<CR>
+nnoremap rm :action ExtractMethod<CR>
+nnoremap rv :action IntroduceVariable<CR>
+nnoremap rf :action IntroduceField<CR>
+nnoremap rs :action ChangeSignature<CR>
+nnoremap rp :action Refactorings.QuickListPopupAction<CR>
 
-nnoremap <leader>gd :action GotoDeclaration<CR>
-nnoremap <leader>gt :action GotoTypeDeclaration<CR>
-nnoremap <leader>gi :action GotoImplementation<CR>
-nnoremap <leader>gu :action ShowUsages<CR>
-nnoremap <leader>gk :action GotoNextError<CR>
-nnoremap <leader>gj :action GotoPreviousError<CR>
-nnoremap <leader>gr :action ShowErrorDescription<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gt :action GotoTypeDeclaration<CR>
+nnoremap gs :action ShowUsages<CR>
+nnoremap <leader>gs :action FindUsages<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap ga :action ShowErrorDescription<CR>
+nnoremap gk :action GotoNextError<CR>
+nnoremap gj :action GotoPreviousError<CR>
 nnoremap ca :action ShowIntentionActions<CR>
 nnoremap K :action QuickJavaDoc<CR>
 
@@ -121,6 +121,8 @@ nnoremap ú :action MethodUp<CR>
 nnoremap ő :action MethodDown<CR>
 nnoremap ó :action MoveStatementUp<CR>
 nnoremap ü :action MoveStatementDown<CR>
+nnoremap sj :action MoveElementLeft<CR>
+nnoremap sk :action MoveElementRight<CR>
 
 nnoremap <leader>dp :action ToggleLineBreakpoint<CR>
 nnoremap <leader>dt :action ActivateDebugToolWindow<CR>
@@ -128,7 +130,6 @@ nnoremap <leader>de :action EvaluateExpression<CR>
 nnoremap <leader>dm :action XDebugger.MuteBreakpoints<CR>
 
 nnoremap <leader>gc :action CheckinProject<CR>
-nnoremap <leader>gs :action ActivateVersionControlToolWindow<CR>
 nnoremap <leader>gb :action Git.Branches<CR>
 nnoremap <leader>sm :action MaximizeEditorInSplit<CR>
 nnoremap <leader>wn :action MoveEditorToOppositeTabGroup<CR>
