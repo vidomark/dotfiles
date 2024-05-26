@@ -43,8 +43,8 @@ return {
     })
 
     local keymap = vim.keymap
-    keymap.set("n", "fe", "<cmd>:NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
-    keymap.set("n", "fv", "<cmd>:NvimTreeFindFile<CR>", { desc = "Toggle file explorer on current file" })
-    keymap.set("n", "fr", "<cmd>:NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
+    keymap.set("n", "nf", "<cmd>:NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+    keymap.set("n", "nd", "<cmd>:NvimTreeFindFile<CR>", { desc = "Toggle file explorer on current file" })
+    keymap.set("n", "nr", "<cmd>:NvimTreeRefresh<CR>", { desc = "Refresh file explorer" })
   end,
 }

@@ -49,7 +49,8 @@ set ideastatusicon=gray
 
 
 map Q gq
-nnoremap H <nop>
+map H ^
+map L $
 inoremap jk <Esc>
 vnoremap ő <gv
 vnoremap ú >gv
@@ -84,11 +85,11 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-k> <C-w>k
 nnoremap <C-j> <C-w>j
 
+nnoremap <leader>sd :action SafeDelete<CR>
+nnoremap <leader>ib :action InvertBoolean<CR>
+
 nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>t :action Terminal.OpenInTerminal<CR>
-
-nnoremap zc :action CollapseRegion<CR>
-nnoremap zo :action ExpandRegion<CR>
 
 nnoremap <leader>fs :action FileStructurePopup<CR>
 nnoremap <leader>e :action RecentFiles<CR>
@@ -121,19 +122,17 @@ nnoremap ú :action MethodUp<CR>
 nnoremap ő :action MethodDown<CR>
 nnoremap ó :action MoveStatementUp<CR>
 nnoremap ü :action MoveStatementDown<CR>
-nnoremap sj :action MoveElementLeft<CR>
-nnoremap sk :action MoveElementRight<CR>
+nnoremap <leader>sj :action MoveElementLeft<CR>
+nnoremap <leader>sk :action MoveElementRight<CR>
 
 nnoremap <leader>dp :action ToggleLineBreakpoint<CR>
+nnoremap <leader>ds :action ViewBreakpoints<CR>
 nnoremap <leader>dt :action ActivateDebugToolWindow<CR>
 nnoremap <leader>de :action EvaluateExpression<CR>
 nnoremap <leader>dm :action XDebugger.MuteBreakpoints<CR>
 
-nnoremap <leader>gc :action CheckinProject<CR>
-nnoremap <leader>gb :action Git.Branches<CR>
 nnoremap <leader>sm :action MaximizeEditorInSplit<CR>
 nnoremap <leader>wn :action MoveEditorToOppositeTabGroup<CR>
 
-nnoremap fe :NERDTree<CR>
-nnoremap fv :action SelectInProjectView<CR>
-
+nnoremap nf :NERDTree<CR>
+nnoremap nd :action SelectInProjectView<CR>

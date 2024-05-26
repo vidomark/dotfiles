@@ -2,6 +2,7 @@
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR=nvim
 export VISUAL=nvim
 export BAT_THEME="gruvbox-dark"
 export LESS='-i'
@@ -21,6 +22,7 @@ source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
 
 alias lg="lazygit"
 alias vim='nvim'
