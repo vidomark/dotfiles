@@ -1,7 +1,2 @@
-require("mvido.core")
-require("mvido.lazy")
-
-return {
-  "nvim-lua/plenary.nvim",
-  "christoomey/vim-tmux-navigator",
-}
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
