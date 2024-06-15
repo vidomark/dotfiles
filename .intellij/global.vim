@@ -17,8 +17,8 @@ map L $
 " NOTE: IdeaVim's smart join can be triggered using Ctrl + Shift + J
 
 " Method movements
-map [m őm
-map ]m úm
+" map [m őm
+" map ]m úm
 
 " Faster change/delete of a word
 map C ciw
@@ -69,11 +69,10 @@ nnoremap N Nzzzv
 
 " Void register deletion
 noremap x "_x
-vnoremap <leader>d "_d
-vnoremap <leader>c "_c
-vnoremap <leader>p "_dp
+vnoremap c "_c
+vnoremap p "_dp
 
-" Easier indentation
+  " Easier indentation
 vnoremap ő <gv
 vnoremap ú >gv
 

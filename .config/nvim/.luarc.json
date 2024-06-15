@@ -1,5 +1,3 @@
 {
-    "diagnostics.globals": [
-        "java_filetypes"
-    ]
+  "diagnostics.globals": ["java_filetypes"]
 }

@@ -48,3 +48,7 @@ map <leader>gp <Action>(Git.ChangesView.AcceptTheirs)
 " Checkin Project
 let g:WhichKeyDesc_git_accept_theirs                      = "<leader>gc Checkin Project"
 map <leader>gc <Action>(CheckinProject)
+
+" Git Blame
+let g:WhichKeyDesc_git_blame                              = "<leader>ga Git Blame"
+map <leader>ga <Action>(Annotate)

@@ -17,11 +17,18 @@ vim.keymap.set("i", "jk", "<Esc>")
 -- Visual
 vim.keymap.set("v", "ő", "<gv")
 vim.keymap.set("v", "ú", ">gv")
-
-vim.keymap.set({ "n", "v" }, "x", '"_x')
 vim.keymap.set("v", "<leadek>d", '"_d')
 vim.keymap.set("v", "<leader>c", '"_c')
 vim.keymap.set("v", "<leader>p", '"_dP')
+vim.keymap.set({ "n", "v" }, "x", '"_x')
+
+-- Operator Pending
+vim.keymap.set("o", "ac", ":<C-u>silent! execute 'normal! f{va{'<CR>")
+vim.keymap.set("o", "ic", ":<C-u>silent! execute 'normal! f{vi{'<CR>")
+vim.keymap.set("o", "ab", ":<C-u>silent! execute 'normal! f[va['<CR>")
+vim.keymap.set("o", "ib", ":<C-u>silent! execute 'normal! f[vi['<CR>")
+vim.keymap.set("o", "ao", ":<C-u>silent! execute 'normal! f(va('<CR>")
+vim.keymap.set("o", "io", ":<C-u>silent! execute 'normal! f(vi('<CR>")
 
 -- Window
 vim.keymap.set("n", "<leader>ww", "<C-W>p", { desc = "Other Window" })
