@@ -17,7 +17,6 @@ vim.keymap.set("i", "jk", "<Esc>")
 -- Visual
 vim.keymap.set("v", "ő", "<gv")
 vim.keymap.set("v", "ú", ">gv")
-vim.keymap.set("v", "<leadek>d", '"_d')
 vim.keymap.set("v", "<leader>c", '"_c')
 vim.keymap.set("v", "<leader>p", '"_dP')
 vim.keymap.set({ "n", "v" }, "x", '"_x')

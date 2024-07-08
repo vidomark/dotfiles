@@ -100,13 +100,13 @@ map <C-S-l> <Action>(MoveElementRight)
 map <C-S-j> <Action>(MoveStatementDown)
 map <C-S-k> <Action>(MoveStatementUp)
 
-" Quick docoumentation
-nmap K <Action>(QuickJavaDoc)
-
 " Select file in project view
-let g:WhichKeyDesc_select_in_project_view_ = "<leader>1"
+let g:WhichKeyDesc_select_in_project_view_                                                   = "<leader>1"
 map <leader>1 <Action>(SelectInProjectView)
 
 " Clear search highlight
-let g:WhichKeyDesc_no_highlight = "<leader>n"
+let g:WhichKeyDesc_no_highlight                                                              = "<leader>n"
 nnoremap <leader>n :nohlsearch<CR>
+
+" Quick docoumentation
+nmap K <Action>(QuickJavaDoc)

@@ -33,9 +33,17 @@ map <leader>vs <Action>(ActivateStructureToolWindow)
 let g:WhichKeyDesc_view_terminal                                    = "<leader>vt Terminal"
 map <leader>vt <Action>(ActivateTerminalToolWindow)
 
+" Open In Terminal Tool Window
+let g:WhichKeyDesc_open_in_terminal                                 = "<leader>vT Open In Terminal"
+map <leader>vT <Action>(Terminal.OpenInTerminal)
+
 " Activate Services Tool Window
 let g:WhichKeyDesc_view_services                                    = "<leader>vv Services View"
 map <leader>vv <Action>(ActivateServicesToolWindow)
+
+" Activate Run Tool Window
+let g:WhichKeyDesc_view_run                                         = "<leader>vr Debug Run"
+map <leader>vr <Action>(ActivateRunToolWindow)
 
 " Activate Debug Tool Window
 let g:WhichKeyDesc_view_debug                                       = "<leader>vD Debug View"

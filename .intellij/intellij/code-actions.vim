@@ -44,3 +44,11 @@ map <leader>ci <Action>(InvertBoolean)
 " Show intention actions
 let g:WhichKeyDesc_code_showintentionactions                                                 = "<leader>ca Show intention actions"
 map <leader>ca <Action>(ShowIntentionActions)
+
+" Explain Plan
+let g:WhichKeyDesc_code_explain_plan                                                         = "<leader>cp Explain Plan"
+map <leader>cp <Action>(Console.Jdbc.ExplainPlan)
+
+" Explain Analyze Plan
+let g:WhichKeyDesc_code_explain_analyse_plan                                                  = "<leader>cP Explain Analyze Plan"
+map <leader>cP <Action>(Console.Jdbc.ExplainAnalyse)

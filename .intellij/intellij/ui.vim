@@ -4,10 +4,6 @@
 " Clear search highlight, change color scheme, toggle zen/fullscreen, etc...
 let g:WhichKeyDesc_ui                                                          = "<leader>u UI"
 
-" Clear search highlight
-let g:WhichKeyDesc_ui_clear_search_highlight                                   = "<leader>uu Clear Search Highlight"
-map <leader>uu :noh<cr>
-
 " Toggle line numbers
 let g:WhichKeyDesc_ui_toggle_line_numbers                                      = "<leader>ul Toggle Line Numbers"
 map <leader>ul <Action>(EditorToggleShowLineNumbers)
