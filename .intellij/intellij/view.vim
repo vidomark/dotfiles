@@ -88,3 +88,15 @@ map <leader>va <Action>(ActivateVcsChangesToolWindow)
 " Activate Notification Tool Window
 let g:WhichKeyDesc_view_notification                                = "<leader>vn Notification View"
 map <leader>vn <Action>(ActivateNotificationsToolWindow)
+
+" Last Window
+let g:WhichKeyDesc_last_window                                      = "<leader>vl Jump To Last Window"
+map <leader>vl <Action>(JumpToLastWindow)
+
+" Hide Active Tool Window
+let g:WhichKeyDesc_hide_active_tool_window                          = "<leader>vX Hide Active Tool Window"
+map <leader>vX <Action>(HideActiveWindow)
+
+" Hide All Tool Window
+let g:WhichKeyDesc_hide_all_tool_window                             = "<leader>vx Hide All Tool Window"
+map <leader>vx <Action>(HideAllWindows)

@@ -57,12 +57,6 @@ nnoremap vao va(
 " Select all
 nnoremap <C-c> ggVG
 
-" Better code navigation
-nnoremap <C-d> <C-d>zz
-nnoremap <C-u> <C-u>zz
-nnoremap <C-o> <C-o>zz
-nnoremap <C-i> <C-i>zz
-
 " Better search navigation
 nnoremap n nzzzv
 nnoremap N Nzzzv
@@ -79,6 +73,36 @@ vnoremap ú >gv
 " Start newline without entering insert mode and maintains cursor position
 map <CR> m`o<Esc>``
 map <S-CR> m`i<CR><ESC>``
+
+"--  Method text objects operation replacement
+nnoremap vam j:action MethodUp<cr>0v]M
+nnoremap vim j:action MethodUp<cr>f{vi{
+nnoremap yam j:action MethodUp<cr>0v]My
+nnoremap yim j:action MethodUp<cr>f{yi{
+nnoremap dam j:action MethodUp<cr>0v]M"_d
+nnoremap dim j:action MethodUp<cr>"_di{
+nnoremap cam j:action MethodUp<cr>0v]M"_c
+nnoremap cim j:action MethodUp<cr>f{"_ci{
+
+"--  Class motions
+nnoremap vic gg :action MethodDown<cr>f{vi{ 
+nnoremap vac gg :action MethodDown<cr>f{va{V
+nnoremap yic gg :action MethodDown<cr>f{yi{ 
+nnoremap yac gg :action MethodDown<cr>f{va{Vy
+nnoremap dic gg :action MethodDown<cr>f{"_di{ 
+nnoremap dac gg :action MethodDown<cr>f{va{V"_d
+nnoremap cic gg :action MethodDown<cr>f{"_ci{ 
+nnoremap cac gg :action MethodDown<cr>f{va{V"_c
+" nnoremap őc :call search('\<class\>', 'bW')<cr> ^ 
+" nnoremap úc :call search('\<class\>', 'W')<cr> ^ 
+" nnoremap őC :call search('\<class\>', 'bW')<cr> f{% 
+" nnoremap úC :call search('\<class\>', 'W')<cr> f{% 
+
+" Better code navigation
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap <C-o> <C-o>zz
+nnoremap <C-i> <C-i>zz
 
 " Forward/Back
 map <C-o> <Action>(Back)
