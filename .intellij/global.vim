@@ -67,8 +67,8 @@ vnoremap c "_c
 vnoremap p "_dp
 
   " Easier indentation
-vnoremap ő <gv
-vnoremap ú >gv
+vnoremap - <gv
+vnoremap = >gv
 
 " Start newline without entering insert mode and maintains cursor position
 map <CR> m`o<Esc>``
@@ -85,14 +85,14 @@ nnoremap cam j:action MethodUp<cr>0v]M"_c
 nnoremap cim j:action MethodUp<cr>f{"_ci{
 
 "--  Class motions
-nnoremap vic gg :action MethodDown<cr>f{vi{ 
-nnoremap vac gg :action MethodDown<cr>f{va{V
-nnoremap yic gg :action MethodDown<cr>f{yi{ 
-nnoremap yac gg :action MethodDown<cr>f{va{Vy
-nnoremap dic gg :action MethodDown<cr>f{"_di{ 
-nnoremap dac gg :action MethodDown<cr>f{va{V"_d
-nnoremap cic gg :action MethodDown<cr>f{"_ci{ 
-nnoremap cac gg :action MethodDown<cr>f{va{V"_c
+nnoremap viC gg :action MethodDown<cr>f{vi{ 
+nnoremap vaC gg :action MethodDown<cr>f{va{V
+nnoremap yiC gg :action MethodDown<cr>f{yi{ 
+nnoremap yaC gg :action MethodDown<cr>f{va{Vy
+nnoremap diC gg :action MethodDown<cr>f{"_di{ 
+nnoremap daC gg :action MethodDown<cr>f{va{V"_d
+nnoremap ciC gg :action MethodDown<cr>f{"_ci{ 
+nnoremap caC gg :action MethodDown<cr>f{va{V"_c
 " nnoremap őc :call search('\<class\>', 'bW')<cr> ^ 
 " nnoremap úc :call search('\<class\>', 'W')<cr> ^ 
 " nnoremap őC :call search('\<class\>', 'bW')<cr> f{% 

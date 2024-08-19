@@ -29,7 +29,7 @@ set number
 set relativenumber
 
 " Minimum number of lines above and below the cursor
-set scrolloff=15
+set scrolloff=20
 
 " Show current mode on the status line
 set showmode

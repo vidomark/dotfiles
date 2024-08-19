@@ -1,13 +1,6 @@
 # Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
-export ZSH="$HOME/.oh-my-zsh"
-export EDITOR=nvim
-export VISUAL=nvim
-export BAT_THEME="gruvbox-dark"
-export LESS='-i'
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#575451,bold"
-
 source $HOME/.init-oh-my-zsh.sh
 source $HOME/.pl9k.sh
 source $ZSH/oh-my-zsh.sh
@@ -29,6 +22,10 @@ alias vim='nvim'
 alias ls="lsd"
 alias cd="z"
 alias cat="bat"
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
 
 plugins=(
   git

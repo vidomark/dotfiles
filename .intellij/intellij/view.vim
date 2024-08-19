@@ -10,8 +10,8 @@ let g:WhichKeyDesc_view_project                                     = "<leader>v
 map <leader>vf <Action>(ActivateProjectToolWindow)
 
 " Activate Database Tool Window
-let g:WhichKeyDesc_view_database                                    = "<leader>vd Database View"
-map <leader>vd <Action>(ActivateDatabaseToolWindow)
+let g:WhichKeyDesc_view_database                                    = "<leader>vD Database View"
+map <leader>vD <Action>(ActivateDatabaseToolWindow)
 
 " Activate Commit Tool Window
 let g:WhichKeyDesc_view_commit                                      = "<leader>vc Commit View"
@@ -46,8 +46,8 @@ let g:WhichKeyDesc_view_run                                         = "<leader>v
 map <leader>vr <Action>(ActivateRunToolWindow)
 
 " Activate Debug Tool Window
-let g:WhichKeyDesc_view_debug                                       = "<leader>vD Debug View"
-map <leader>vD <Action>(ActivateDebugToolWindow)
+let g:WhichKeyDesc_view_debug                                       = "<leader>vd Debug View"
+map <leader>vd <Action>(ActivateDebugToolWindow)
 
 " Activate Build Tool Window
 let g:WhichKeyDesc_view_build                                       = "<leader>vb Build View"
