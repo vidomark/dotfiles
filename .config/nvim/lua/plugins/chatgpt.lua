@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   config = function()
     local api_key = vim.fn.expand("OPENAI_API_KEY")
-    vim.keymap.set("n", "<leader>cg", "<cmd>ChatGPT<CR>", { desc = { "Open ChatGPT prompts" } })
+    vim.keymap.set("n", "<leader>cg", "<cmd>ChatGPT<CR>", { desc = "Open ChatGPT prompts" })
     require("chatgpt").setup({
       api_key = api_key,
       openai_params = {
