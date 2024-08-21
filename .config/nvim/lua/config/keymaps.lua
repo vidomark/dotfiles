@@ -1,7 +1,6 @@
 -- Normal
 vim.keymap.set({ "n", "o" }, "H", "^", { desc = "Move to the first non-blank character of the line" })
 vim.keymap.set({ "n", "o" }, "L", "$", { desc = "Move to the end of the line" })
-vim.keymap.set({ "n" }, "<leader>n", "<cmd>noh<cr><esc>", { desc = "Escape and Clear hlsearch" })
 vim.keymap.set("n", "<C-o>", "<C-o>zz", { desc = "Back and center" })
 vim.keymap.set("n", "<C-i>", "<C-i>zz", { desc = "Forward and center" })
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Page down and center" })
@@ -65,3 +64,14 @@ vim.keymap.set("n", "<leader>vt", lazyterm, { desc = "Terminal (Root)" })
 vim.keymap.set("n", "<leader>vT", function()
   LazyVim.terminal()
 end, { desc = "Terminal" })
+
+-- Deletion
+vim.keymap.del("n", "<leader>K")
+vim.keymap.del("n", "<leader>-")
+vim.keymap.del("n", "<leader>:")
+vim.keymap.del("n", "<leader>D")
+vim.keymap.del("n", "<leader>`")
+vim.keymap.del("n", "<leader>|")
+vim.keymap.del("n", "<leader>?")
+vim.keymap.del({ "n", "x" }, "<leader>p")
+vim.keymap.del("n", "<leader> ")
