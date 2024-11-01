@@ -50,16 +50,16 @@ let g:WhichKeyDesc_debug_removeallbreakpoints           = "<leader>dd Remove All
 map <leader>dd <Action>(Debugger.RemoveAllBreakpoints)
 
 " Step Over
-let g:WhichKeyDesc_debug_stepover                       = "<leader>dO Step Over"
-map <leader>dO <Action>(StepOver)
+let g:WhichKeyDesc_debug_stepover                       = "<leader>do Step Over"
+map <leader>do <Action>(StepOver)
 
 " Step Into
 let g:WhichKeyDesc_debug_stepinto                       = "<leader>di Step Into"
 map <leader>di <Action>(StepInto)
 
 " Step Out
-let g:WhichKeyDesc_debug_stepout                        = "<leader>do Step Out"
-map <leader>do <Action>(StepOut)
+let g:WhichKeyDesc_debug_stepout                        = "<leader>dO Step Out"
+map <leader>dO <Action>(StepOut)
 
 " Resume
 let g:WhichKeyDesc_debug_continue                       = "<leader>dc Resume"

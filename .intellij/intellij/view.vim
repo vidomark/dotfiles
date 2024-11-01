@@ -73,6 +73,10 @@ map <leader>vm <Action>(ActivateMavenToolWindow)
 let g:WhichKeyDesc_view_coverage                                    = "<leader>vC Coverage View"
 map <leader>vC <Action>(ActivateCoverageToolWindow)
 
+" Activate Gradle Tool Window
+let g:WhichKeyDesc_view_gradle                                      = "<leader>vG Gradle View"
+map <leader>vG <Action>(ActivateGradleToolWindow)
+
 " Activate Endpoints Tool Window
 let g:WhichKeyDesc_view_endpoints                                   = "<leader>ve Endpoints View"
 map <leader>ve <Action>(ActivateEndpointsToolWindow)

@@ -66,9 +66,15 @@ noremap x "_x
 vnoremap c "_c
 vnoremap p "_dp
 
-  " Easier indentation
+" Easier indentation
 vnoremap - <gv
 vnoremap = >gv
+
+" Insert mode navigation in insert mode
+inoremap <C-l> <Esc>2li
+inoremap <C-h> <Esc>2hi
+inoremap <C-k> <Esc>kli
+inoremap <C-j> <Esc>jli
 
 " Start newline without entering insert mode and maintains cursor position
 map <CR> m`o<Esc>``

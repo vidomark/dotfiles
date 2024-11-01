@@ -6,12 +6,12 @@ source $HOME/.pl9k.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.fzf-config.sh
 source $HOME/fzf-git/fzf-git.sh
-source $HOME/.cursor-mode.sh
 source $HOME/.history-config.zsh
-source $HOME/.keybindings.sh
+source $HOME/.zsh-vi-mode.sh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
