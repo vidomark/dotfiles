@@ -7,7 +7,7 @@ source $ZSH/oh-my-zsh.sh
 source $HOME/.fzf-config.sh
 source $HOME/fzf-git/fzf-git.sh
 source $HOME/.history-config.zsh
-source $HOME/.zsh-vi-mode.sh
+source $HOME/.zsh-vi-mode.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-you-should-use/you-should-use.plugin.zsh
