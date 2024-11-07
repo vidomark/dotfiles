@@ -142,6 +142,10 @@ source ~/dotfiles/.intellij/plugins_ideavim/quickscope.vim
 " More interactive file system explorer
 source ~/dotfiles/.intellij/plugins_ideavim/nerdtree.vim
 
+" https://github.com/jphalip/ideavim-peekaboo
+" Register GUI
+source ~/dotfiles/.intellij/plugins_ideavim/peekaboo.vim
+
 " Highlights the yanked area
 source ~/dotfiles/.intellij/plugins_ideavim/highlightedyank.vim
 
