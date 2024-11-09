@@ -8,6 +8,7 @@ return {
       api_key_cmd = "gpg --decrypt " .. home .. "/openai_api_key.txt.gpg",
       openai_params = {
         model = "gpt-4o",
+        max_tokens = 16384,
       },
     })
   end,
