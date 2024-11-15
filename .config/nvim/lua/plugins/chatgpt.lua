@@ -5,7 +5,7 @@ return {
     local home = vim.fn.expand("$HOME")
     vim.keymap.set("n", "<leader>cg", "<cmd>ChatGPT<CR>", { desc = "Open ChatGPT prompts" })
     require("chatgpt").setup({
-      api_key_cmd = "gpg --decrypt " .. home .. "/openai_api_key.txt.gpg",
+      api_key_cmd = "gpg --decrypt " .. home .. "/openai_api_key.gpg",
       openai_params = {
         model = "gpt-4o",
         max_tokens = 16384,
