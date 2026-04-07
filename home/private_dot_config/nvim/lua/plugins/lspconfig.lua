@@ -5,6 +5,7 @@ return {
     keys[#keys + 1] = { "<leader>cr", false }
     table.insert(keys, { "<leader>rn", vim.lsp.buf.rename, desc = "Rename" })
     table.insert(keys, { "gi", vim.lsp.buf.implementation, desc = "Goto Implementation" })
+    table.insert(keys, { "gd", vim.lsp.buf.definition, has = "definition", desc = "Goto Definition" })
   end,
 
   dependencies = {
