@@ -25,6 +25,8 @@ source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autopair/autopair.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-completions/zsh-completions.plugin.zsh 2>/dev/null
+source "$ZDOTDIR/plugins/forgit/forgit.plugin.zsh" 2>/dev/null
 
 export ZSH="$ZDOTDIR/ohmyzsh"
 
@@ -56,7 +58,7 @@ zstyle ':completion:*:git-checkout:*' sort false
 # NOTE: don't use escape sequences (like '%F{red}%d%f') here, fzf-tab will ignore them
 zstyle ':completion:*:descriptions' format '[%d]'
 # set list-colors to enable filename colorizing
-zstyle ':completion:*' list-colors "''${(s.:.)LS_COLORS}"
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 # force zsh not to show completion menu, which allows fzf-tab to capture the unambiguous prefix
 zstyle ':completion:*' menu no
 # preview directory's content with eza when completing cd
