@@ -1,0 +1,34 @@
+[[mgr.prepend_keymap]]
+desc = "Smart filter"
+on = "F"
+run = "plugin smart-filter"
+
+[[mgr.prepend_keymap]]
+desc = "Maximize or restore the preview pane"
+on = "T"
+run = "plugin max-preview"
+
+[[mgr.prepend_keymap]]
+desc = "Chmod on selected files"
+on = ["c", "m"]
+run = "plugin chmod"
+
+[[mgr.prepend_keymap]]
+desc = "Copy to system-clipboard"
+on = "<C-y>"
+run = "plugin system-clipboard"
+
+[[mgr.prepend_keymap]]
+desc = "Archive selected files"
+on = ["c", "a"]
+run = "plugin compress"
+
+[[mgr.prepend_keymap]]
+desc = "Find file by content"
+on = ["<Space>", "f", "g"]
+run = "plugin fg"
+
+[[mgr.prepend_keymap]]
+desc = "Find file by filename"
+on = ["<Space>", "f", "f"]
+run = "plugin fg --args='fzf'"

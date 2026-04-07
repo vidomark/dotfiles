@@ -1,0 +1,51 @@
+# Font
+font-family = ComicShannsMono Nerd Font Mono
+font-size = 32
+font-thicken = true
+
+# Theme & colors
+theme = Gruvbox Material
+
+# Custom palette (Tomorrow Night overrides on top of Gruvbox Material)
+palette = 0=#1d1f21
+palette = 1=#cc6666
+palette = 2=#b5bd68
+palette = 3=#f0c674
+palette = 4=#81a2be
+palette = 5=#b294bb
+palette = 6=#8abeb7
+palette = 7=#c5c8c6
+palette = 8=#666666
+palette = 9=#d54e53
+palette = 10=#b9ca4a
+palette = 11=#e7c547
+palette = 12=#7aa6da
+palette = 13=#c397d8
+palette = 14=#70c0b1
+palette = 15=#eaeaea
+
+# Cursor
+cursor-style-blink = true
+cursor-color = #d4be98
+
+# Appearance
+background-opacity = 0.85
+background-blur = 70
+window-padding-x = 10
+window-padding-y = 10
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+custom-shader = ./shaders/cursor_smear.glsl
+custom-shader-animation = true
+
+# Behavior
+mouse-scroll-multiplier = precision:1,discrete:1
+copy-on-select = false
+auto-update = check
+auto-update-channel = stable
+
+# Custom keybinds
+keybind = shift+enter=text:\x1b\r
+keybind = super+backspace=esc:\x15
+keybind = super+shift+j=write_scrollback_file:paste,plain
+keybind = super+alt+shift+j=write_scrollback_file:open,plain

@@ -1,0 +1,47 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "de53d90"
+hash = "e56b7abf3c06e8ce496eadcca168c093"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "de53d90"
+hash = "1adc12c2b2b025411ab61eb8f0879574"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+rev = "9fc8fe0"
+hash = "2ad086899bf368fba211a33d8f68c39d"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "de53d90"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "de53d90"
+hash = "63b6c222bf2103b3023389dde5e2ecfe"
+
+[[plugin.deps]]
+use = "llanosrocas/githead"
+rev = "76fe4b8"
+hash = "10c3bc6cd6f3223e18f2483320a9e24a"
+
+[[plugin.deps]]
+use = "Reledia/glow"
+rev = "bd3eaa5"
+hash = "92b5c58159a51c567f82b618cee2b78"
+
+[[plugin.deps]]
+use = "ahkohd/eza-preview"
+rev = "b114b01"
+hash = "7676d7da18953f4351048004ab45f0f4"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+rev = "a63550b"
+hash = "c2021386289a0cbb3e152a052f67c177"
+
+[flavor]
+deps = []

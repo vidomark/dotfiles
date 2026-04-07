@@ -1,0 +1,9 @@
+README.md
+LICENSE
+Brewfile
+.DS_Store
+**/.DS_Store
+**/*.zwc
+**/.zcompdump*
+**/.zsh_history
+**/.zsh_sessions
