@@ -1,7 +1,3 @@
-# Taps
-tap "homebrew/services"
-tap "homebrew/cask"
-
 # Core utilities
 brew "ripgrep"
 brew "jq"

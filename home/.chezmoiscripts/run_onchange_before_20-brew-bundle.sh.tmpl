@@ -3,5 +3,5 @@
 set -euo pipefail
 
 # Brewfile hash: {{ include "../Brewfile" | sha256sum }}
-brew bundle --file="{{ .chezmoi.sourceDir }}/../Brewfile" --no-lock
+brew bundle --file="{{ .chezmoi.sourceDir }}/../Brewfile"
 {{ end -}}
