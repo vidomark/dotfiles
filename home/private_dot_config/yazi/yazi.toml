@@ -91,6 +91,15 @@ on = ["*"]
 run = "plugin eza-preview toggle-hidden"
 desc = "Toggle hidden files"
 
+[opener]
+browser = [
+  { run = 'open "$@"', desc = "Open in browser" }
+]
+
+[[open.prepend_rules]]
+mime = "text/html"
+use = "browser"
+
 [[plugin.prepend_previewers]]
 name = "*.md"
 run = "glow"
